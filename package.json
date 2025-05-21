@@ -7,7 +7,8 @@
         "test": "test",
         "start1": "webpack-dev-server --config webpack.config.js --hot",
         "start": "webpack build --hot --watch --mode=development",
-        "startBoth": "concurrently \"yarn start\" \"node server/server.js\""
+        "startBoth": "concurrently \"yarn start\" \"node server/server.js\"",
+        "prod": "webpack build --mode=production && node server/server.js"
     },
     "keywords": [
         "boilerplate",
