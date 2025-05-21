@@ -6,7 +6,8 @@
     "scripts": {
         "test": "test",
         "start1": "webpack-dev-server --config webpack.config.js --hot",
-        "start": "webpack build --hot --watch --mode=development"
+        "start": "webpack build --hot --watch --mode=development",
+        "startBoth": "concurrently \"yarn start\" \"node server/server.js\""
     },
     "keywords": [
         "boilerplate",
@@ -21,6 +22,7 @@
         "@babel/preset-env": "^7.16.11",
         "@babel/preset-react": "^7.16.7",
         "babel-loader": "^8.2.3",
+        "concurrently": "^9.1.2",
         "css-loader": "^6.6.0",
         "express": "^4.17.1",
         "express-session": "^1.17.1",
