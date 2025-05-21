@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const publicPath = path.join(__dirname, "../dist");
 
-const ip = '127.0.0.1';
+const ip = '0.0.0.0';
 const port = 2000;
 
 const server = app.listen(port, ip, () => {
